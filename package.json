@@ -2,17 +2,19 @@
   "fitbit": {
     "appUUID": "ceef89fb-5dfe-480f-91d8-41fb7be127b8",
     "appType": "app",
-    "appDisplayName": "sd",
+    "appDisplayName": "Topi",
     "iconFile": "resources/icon.png",
     "wipeColor": "#8bc34a",
-    "requestedPermissions": [],
+    "requestedPermissions": [
+      "access_internet"
+    ],
     "buildTargets": [
       "higgs",
       "meson"
     ],
     "i18n": {
       "en": {
-        "name": "sd"
+        "name": "Topi"
       }
     }
   }

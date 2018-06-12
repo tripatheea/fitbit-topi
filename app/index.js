@@ -26,9 +26,7 @@ function getLightStatus() {
 }
 
 
-// Display the weather data received from the companion
 function updateLightIcon(data) {
-  console.log("Updating light icon to" + data);
   if (data == 0) {
     var button_text = "On";
     var button_image = "off.png";
@@ -52,9 +50,6 @@ messaging.peerSocket.onopen = function() {
 
 // Listen for messages from the companion
 messaging.peerSocket.onmessage = function(evt) {
-  console.log("heard back from the component");
-  console.log(evt.data);
-  
   if ((evt.data == 0) || (evt.data == 1)) {
     updateLightIcon(evt.data);
   }
